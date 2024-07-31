@@ -1,0 +1,30 @@
+package in.ashokit.rest;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import in.ashokit.binding.Book;
+import in.ashokit.binding.PassengerInfo;
+import in.ashokit.binding.TicketInfo;
+
+@RestController
+public class TicketRestController {
+
+	@PostMapping(
+			value = "/ticket",
+			produces = { "application/json" }, 
+			consumes = { "application/json" })
+	public ResponseEntity<PassengerInfo> addBook(@RequestBody PassengerInfo request) {
+		System.out.println(request);
+		// logic to book Ticket
+		TicketInfo tInfo = new TicketInfo();
+		tInfo.setTicketId(1234);
+		tInfo.setPnr("123456789");
+		tInfo.setTicketStatus("Conformed");
+		
+		return new ResponseEntity<>(tInfo, HttpStatus.CREATED);
+	}
+}

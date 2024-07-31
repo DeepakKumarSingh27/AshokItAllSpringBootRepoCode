@@ -1,0 +1,10 @@
+package in.ashokit.converter;
+
+import java.io.File;
+
+public class ConvertXMLToJava {
+	public static void main(String[] args) {
+		File xmlFile = new File("person.xml");
+         
+	}
+}

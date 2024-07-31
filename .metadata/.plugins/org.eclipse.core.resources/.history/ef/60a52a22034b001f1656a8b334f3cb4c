@@ -1,0 +1,12 @@
+package in.ashokit.converter;
+
+import java.io.File;
+
+import javax.xml.bind.JAXBContext;
+
+public class ConvertXMLToJava {
+	public static void main(String[] args) {
+		File xmlFile = new File("person.xml");
+         JAXBContext context = JAXBContext.newInstance(nul)
+	}
+}

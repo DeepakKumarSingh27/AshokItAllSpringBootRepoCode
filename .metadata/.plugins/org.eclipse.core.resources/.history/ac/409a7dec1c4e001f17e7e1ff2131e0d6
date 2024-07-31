@@ -1,0 +1,23 @@
+package in.ashokit.rest;
+
+import org.springframework.beans.factory.xml.ResourceEntityResolver;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import in.ashokit.binding.Product;
+
+@RestController
+public class ProductRestController {
+
+	@GetMapping("/product")
+	public ResponseEntity<Product> getProduct() {
+
+		Product prod = new Product();
+		prod.setPid(101);
+		prod.setPname("mouse");
+		prod.setPrice(400.000d);
+		
+
+	}
+}

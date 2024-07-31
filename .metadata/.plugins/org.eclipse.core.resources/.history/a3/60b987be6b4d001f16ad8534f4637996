@@ -1,0 +1,18 @@
+package in.ashokit;
+
+import com.google.gson.Gson;
+
+public class Main {
+	public static void main(String[] args) {
+		Order order = new Order();
+		order.setOrderId(101);
+		order.setOrderBy("Ramu");
+		order.setOrderStatus("CONFORMED");
+		order.setBillAmt(11111.999d);
+		
+		Gson gson = new Gson();
+		gson.toJson(order);
+		System.out.println(js);
+		
+	}
+}

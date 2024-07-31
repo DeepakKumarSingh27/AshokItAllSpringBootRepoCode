@@ -1,0 +1,21 @@
+package in.ashokit.rest;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class WelcomeController {
+
+	@GetMapping("/welcome")
+	public ResponseEntity<String> getWelcome() {
+		String respPaylod = "Welcom Deepak!!...";
+		return new ResponseEntity<String>(respPaylod, HttpStatus.OK);
+	}
+
+	public String getGreetMsg() {
+		String respPayload = "GoodNight..!!";
+		return respPayload;
+	}
+}

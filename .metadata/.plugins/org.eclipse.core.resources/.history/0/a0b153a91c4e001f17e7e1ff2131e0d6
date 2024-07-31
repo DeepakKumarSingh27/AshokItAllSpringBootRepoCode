@@ -1,0 +1,13 @@
+package in.ashokit.rest;
+
+import org.springframework.beans.factory.xml.ResourceEntityResolver;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
+
+import in.ashokit.binding.Product;
+
+@RestController
+public class ProductRestController {
+
+	public ResponseEntity<Product>
+}

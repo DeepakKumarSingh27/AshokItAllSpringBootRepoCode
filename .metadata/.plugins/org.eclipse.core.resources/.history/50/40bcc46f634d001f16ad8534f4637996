@@ -1,0 +1,12 @@
+package in.ashokit.binding;
+
+import lombok.delombok.ant.Tasks.Delombok;
+
+public class JavaToJsonConverter {
+	public static void main(String[] args) {
+		Book book = new Book();
+		book.setId(101);
+		book.setName("Spring");
+		book.setPrice(202d);
+	}
+}

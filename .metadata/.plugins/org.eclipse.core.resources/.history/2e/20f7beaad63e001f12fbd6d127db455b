@@ -1,0 +1,2 @@
+spring.application.name=09-SpringBoot-App
+spring.main.banner-mode=off

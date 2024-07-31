@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;14-DataJpa-Custom-Queries&apos; to &apos;15-DataJpa-Custom-Queries&apos;" description="Rename resource &apos;14-DataJpa-Custom-Queries&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/14-DataJpa-Custom-Queries" name="15-DataJpa-Custom-Queries" stamp="1721124428856" updateReferences="true"/>
+</session>

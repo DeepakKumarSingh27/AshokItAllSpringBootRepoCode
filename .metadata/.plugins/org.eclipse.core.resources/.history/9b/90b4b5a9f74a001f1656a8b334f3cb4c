@@ -1,0 +1,19 @@
+package in.ashokit.binding;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+import lombok.Data;
+
+@XmlRootElement
+@Data
+public class Person {
+
+	private Integer id;
+
+	private String name;
+
+	private Integer age;
+
+	private Long phno;
+
+}

@@ -1,0 +1,38 @@
+package in.ashokit.converter;
+
+import java.io.File;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
+
+import in.ashokit.binding.Address;
+import in.ashokit.binding.Person;
+import lombok.Data;
+
+@Data
+public class ConvertjavaToXml {
+	public static void main(String[] args) throws Exception {
+
+		Address addr = new Address();
+		addr.setCity("Bettiah");
+		addr.setState("Bihar");
+		addr.setCountry("India");
+
+		Person person = new Person();
+		person.setId(101);
+		person.setName("Deepak");
+		person.setAge(24);
+		person.setPhno(122222222l);
+		person.setType("Doctor");
+		person.setAddress(addr);
+       
+	
+		JAXBContext instance = JAXBContext.newInstance(Person.class);
+
+		Marshaller marshaller = instance.createMarshaller();
+
+		marshaller.marshal(person, new File("person.xml"));
+		System.out.println("Marshalling completed....");
+
+	}
+}

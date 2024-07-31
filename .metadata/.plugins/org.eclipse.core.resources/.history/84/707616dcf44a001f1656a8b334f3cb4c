@@ -1,0 +1,15 @@
+package in.ashokit.converter;
+
+import in.ashokit.binding.Person;
+
+public class ConvertjavaToXml {
+	public static void main(String[] args) {
+     Person person = new  Person();
+     person.setId(101);
+     person.setName("Deepak");
+     person.setAge(24);
+     person.setPhno(122222222);
+     
+    		 
+	}
+}

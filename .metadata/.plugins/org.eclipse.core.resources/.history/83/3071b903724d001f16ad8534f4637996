@@ -1,0 +1,13 @@
+package in.ashokit.rest;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class WelcomeController {
+
+	public ResponseEntity<String> getWelcome(){
+		String respPaylod = "Welcom Deepak!!...";
+		
+	}
+}

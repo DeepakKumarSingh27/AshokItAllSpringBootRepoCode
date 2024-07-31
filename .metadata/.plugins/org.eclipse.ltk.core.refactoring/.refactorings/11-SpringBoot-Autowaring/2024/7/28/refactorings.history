@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MysqlReportDaoImpl.java&apos; to &apos;11-SpringBoot-Autowaring/src/main/java/in.ashokit.dao&apos;&#x0D;&#x0A;- Original project: &apos;11-SpringBoot-Autowaring&apos;&#x0D;&#x0A;- Destination element: &apos;11-SpringBoot-Autowaring/src/main/java/in.ashokit.dao&apos;&#x0D;&#x0A;- Original element: &apos;in.ashokit.dao.MysqlReportDaoImpl.java&apos;" description="Copy compilation unit" destination="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ashokit.dao" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ashokit.dao{MysqlReportDaoImpl.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1720761719355" units="1" version="1.0"/>
+</session>

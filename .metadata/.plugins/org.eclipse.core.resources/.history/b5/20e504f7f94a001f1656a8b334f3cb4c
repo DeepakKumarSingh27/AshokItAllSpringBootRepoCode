@@ -1,0 +1,28 @@
+package in.ashokit.binding;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorOrder;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAnyElement;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+import lombok.Data;
+
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlAccessorOrder()
+@Data
+public class Person {
+
+	private Integer id;
+
+	private String name;
+
+	private Integer age;
+
+	@XmlElement(name="PhoneNUmber")
+	private Long phno;
+	
+	private Address address;
+}

@@ -1,0 +1,14 @@
+package in.ashokit.binding;
+
+public class Person {
+
+	private Integer id;
+	private String name;
+	private Integer age;
+	private Long phno;
+	@Override
+	public String toString() {
+		return "Person [id=" + id + ", name=" + name + ", age=" + age + ", phno=" + phno + "]";
+	}
+	
+}
